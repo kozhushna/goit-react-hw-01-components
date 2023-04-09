@@ -1,0 +1,8 @@
+.friends {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 400px;
+  margin: 0 auto 60px;
+  text-align: center;
+}

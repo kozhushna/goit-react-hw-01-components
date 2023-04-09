@@ -1,10 +1,17 @@
 import PropTypes from 'prop-types';
+import './Profile.css';
 
-const Profile = ({ username, tag, location, avatar, stats: {followers, views, likes} }) => {
-   return (
+const Profile = ({
+  username,
+  tag,
+  location,
+  avatar,
+  stats: { followers, views, likes },
+}) => {
+  return (
     <div className="profile">
       <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
+        <img src={avatar} alt={username} className="avatar" width="200" />
         <p className="name">{username}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
@@ -29,18 +36,15 @@ const Profile = ({ username, tag, location, avatar, stats: {followers, views, li
 };
 
 Profile.propTypes = {
-    
-    username: PropTypes.string.isRequired,
-    tag: PropTypes.string.isRequired,
-    location: PropTypes.string.isRequired,
-    avatar: PropTypes.string.isRequired,
-    stats: PropTypes.exact({
-        followers: PropTypes.number.isRequired,
-        views: PropTypes.number.isRequired,
-        likes: PropTypes.number.isRequired,
-        }),
-     
-   
-  };
+  username: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  stats: PropTypes.exact({
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+    likes: PropTypes.number.isRequired,
+  }),
+};
 
 export default Profile;

@@ -1,0 +1,26 @@
+.item {
+  height: 100%;
+  flex: 1 0 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.label,
+.percentage {
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+.item:not(:last-child) {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.label {
+  color: gray;
+  margin-bottom: 8px;
+}
+
+.percentage {
+  font-size: 24px;
+}

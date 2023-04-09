@@ -8,6 +8,8 @@ import data from '../../source/data.json';
 import friends from '../../source/friends.json';
 import transactions from '../../source/transactions.json';
 
+import './App.css';
+
 export const App = () => {
   return (
     <div className="app-container">
